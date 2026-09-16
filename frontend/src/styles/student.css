@@ -1,0 +1,89 @@
+.student-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+  background: var(--paper);
+}
+
+.student-sidebar {
+  background: var(--ink);
+  color: var(--paper);
+  display: flex;
+  flex-direction: column;
+  padding: 28px 0;
+}
+
+.student-sidebar__brand {
+  font-family: "Lora", serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--gold);
+  padding: 0 24px 28px;
+  border-bottom: 1px solid #313c4d;
+  margin-bottom: 12px;
+}
+
+.student-sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.student-sidebar__link {
+  text-align: left;
+  background: none;
+  border: none;
+  color: #c7ccd6;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+  margin: 0;
+  border-radius: 0;
+}
+
+.student-sidebar__link:hover {
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+}
+
+.student-sidebar__link[aria-current="page"] {
+  background: rgba(201, 162, 39, 0.1);
+  border-left-color: var(--gold);
+  color: #fff;
+}
+
+.student-sidebar__footer {
+  padding: 16px 24px 0;
+  border-top: 1px solid #313c4d;
+  margin-top: 12px;
+}
+
+.student-sidebar__user {
+  font-size: 13px;
+  color: #9aa3b2;
+  margin-bottom: 8px;
+}
+
+.student-sidebar__logout {
+  background: none;
+  border: 1px solid #4a5568;
+  color: #c7ccd6;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.student-sidebar__logout:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.student-main {
+  padding: 40px 48px;
+  max-width: 700px;
+}

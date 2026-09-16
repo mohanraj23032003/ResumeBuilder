@@ -25,8 +25,8 @@ class Education(models.Model):
     institution = models.CharField(max_length=200)
     degree = models.CharField(max_length=150)
     field_of_study = models.CharField(max_length=150, blank=True)
-    start_year = models.PositiveIntegerField()
-    end_year = models.PositiveIntegerField(null=True, blank=True)
+    start_year = models.DateField()
+    end_year = models.DateField(null=True, blank=True)
     grade = models.CharField(max_length=20, blank=True)
 
     class Meta:

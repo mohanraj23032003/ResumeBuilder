@@ -39,10 +39,10 @@ export default function EducationForm() {
         <input id="field_of_study" name="field_of_study" value={form.field_of_study} onChange={handleChange} placeholder="Field of study" autoComplete="off" />
 
         <label htmlFor="start_year">Start year</label>
-        <input id="start_year" name="start_year" type="number" value={form.start_year} onChange={handleChange} placeholder="Start year" autoComplete="off" required />
+        <input id="start_year" name="start_year" type="date" value={form.start_year} onChange={handleChange} placeholder="Start year" autoComplete="off" required />
 
         <label htmlFor="end_year">End year</label>
-        <input id="end_year" name="end_year" type="number" value={form.end_year} onChange={handleChange} placeholder="End year (blank if ongoing)" autoComplete="off" />
+        <input id="end_year" name="end_year" type="date" value={form.end_year} onChange={handleChange} placeholder="End year (blank if ongoing)" autoComplete="off" />
 
         <label htmlFor="grade">Grade / CGPA</label>
         <input id="grade" name="grade" value={form.grade} onChange={handleChange} placeholder="Grade / CGPA" autoComplete="off" />
